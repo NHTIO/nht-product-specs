@@ -53,6 +53,12 @@ Illustrative operational example, not an NHT commitment:
 
 Delivering that checklist can satisfy acceptance without guaranteeing a reduction in onboarding time. Track intended business benefits separately from the deliverable's acceptance tests.
 
+## Secrets and access requirements
+
+A specification can explain which access is needed, why it is needed, and who can arrange it. It must not contain passwords, API keys, tokens, private keys, or other secret values. Keep them out of comments, attachments, ordinary chat, and repositories too; a redeemable secret-sharing link does not belong in the specification either.
+
+If a secret must be shared, the sender should share it directly with the authorized intended recipient through a dedicated secret-sharing application, such as [NHT SecOps](https://secops.nht.io/), which NHT hosts and maintains internally. This names the intended sharing route, not a claim about that service's encryption, expiry, retention, or other unverified capabilities. Spec-writing authority is not permission for an assistant to collect or transmit secrets.
+
 ## Agreement and changes
 
 Record the actual revision and agreement information when known. Publishing in Outline is a document visibility/lifecycle operation, not requester sign-off. Do not invent approval stages, approver roles, signatures, service levels, or a governance workflow.

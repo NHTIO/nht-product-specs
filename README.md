@@ -26,7 +26,7 @@ Ask your assistant, for example:
 
 Codex also supports explicit invocation as `$nht-product-specs`.
 
-The maintained standard and template live in NHT Specs. The bundled references provide a baseline when those pages cannot be read, but access to the public skill does not grant access to private specifications. No project specifications or credentials belong in this repository.
+The maintained standard and template live in NHT Specs. The bundled references provide a baseline when those pages cannot be read, but access to the public skill does not grant access to private specifications. No project specifications or credentials belong in this repository. Passwords, keys, tokens, and other secrets must stay out of specifications, comments, attachments, and ordinary chat as well. Share secrets directly with an authorized intended recipient through a dedicated application such as NHT's internally hosted and maintained [SecOps](https://secops.nht.io/). Record only the access requirement, purpose, and responsible contact in the specification, not the value or a redeemable secret link. MCP authentication continues to use the client's secure OAuth flow.
 
 ## Contents
 

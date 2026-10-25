@@ -6,7 +6,7 @@ NHT Specs uses Outline at `https://specs.nht.io`. Its native MCP endpoint is:
 
 `https://specs.nht.io/mcp`
 
-Use Streamable HTTP. Outline documents OAuth as the default authentication flow. Prefer the client's secure sign-in flow; never put passwords or tokens in chat, skill files, repository configuration, or document content.
+Use Streamable HTTP. Outline documents OAuth as the default authentication flow. Prefer the client's secure sign-in flow. Never solicit, paste, or store passwords, API keys, tokens, private keys, or other secrets in specifications, comments, attachments, ordinary chat, skill files, or repository configuration.
 
 If the client's existing NHT Specs/Outline connector works, reuse it. Otherwise, with the user's authorization to configure their client, use its remote-MCP setup. Examples from [Outline's official MCP guide](https://docs.getoutline.com/s/guide/doc/mcp-6j9jtENNKL), adapted to NHT's domain:
 
@@ -21,6 +21,8 @@ codex mcp add nht-specs --url "https://specs.nht.io/mcp"
 For a connector UI, enter the same endpoint. Outline supports workspace-level MCP enablement and API-key authentication, but neither changing workspace settings nor generating a key is an automatic setup step. An authorized administrator handles disabled MCP; obtain required authorization before creating persistent access.
 
 Validate connection with a harmless collection listing and fetch the Welcome guide. An endpoint responding does not prove successful OAuth or the account's write access. The setup commands above are documented configuration examples, not a claim that this skill has run them on the user's client.
+
+For access needed by the requested work, record only the requirement, purpose, and responsible contact in the spec. If a secret must be shared, direct the user to send it directly to the authorized intended recipient using a dedicated secret-sharing application such as NHT's internally hosted and maintained [SecOps](https://secops.nht.io/). Do not put the secret or a redeemable sharing link in the spec. This does not replace MCP's client-managed OAuth authentication, authorize the assistant to transmit secrets, or establish unverified service capabilities.
 
 ## Workspace organization
 

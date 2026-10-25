@@ -41,6 +41,8 @@ State included and excluded work. Explain boundaries with related requests or la
 
 Explain genuine constraints on the result and their rationale. Identify information, availability, or decisions needed, without turning the section into an engineering dependency plan. Distinguish fixed dates from preferences and unconfirmed targets.
 
+For access dependencies, record the required access, its purpose, and the responsible contact, not passwords, keys, tokens, private keys, or redeemable secret links. Secret values belong in direct sharing to the authorized intended recipient through a dedicated application such as [NHT SecOps](https://secops.nht.io/), not in this document, its comments or attachments, ordinary chat, or the repository.
+
 ## Assumptions and open decisions
 
 Record what remains unverified, who can answer if known, and whether an answer changes deliverables, scope, or acceptance. Keep material unresolved commitments visible.
