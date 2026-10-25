@@ -1,0 +1,4 @@
+interface:
+  display_name: "NHT Product Specs"
+  short_description: "Write requester-first specifications in NHT Specs"
+  default_prompt: "Use $nht-product-specs to turn my request into an NHT Product Specification with clear deliverables and acceptance criteria."
