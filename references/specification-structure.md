@@ -8,7 +8,7 @@ Use the requested capability or outcome as the document title. In Outline, pass 
 
 **Requester:** who is asking and can clarify the need.
 
-**Current state and revision:** keep status in the document rather than moving it among collections. Distinguish an initial draft, proposed changes, and an actually agreed version. Record agreement participants/date only when known.
+**Current state and revision:** keep status in the document rather than moving it among collections. Distinguish an initial draft, proposed changes, and an actually agreed version. Record agreement participants/date only when known. Do not label a product-incomplete draft handoff-ready or an agreed implementation baseline.
 
 ## Problem and purpose
 
@@ -43,10 +43,14 @@ Explain genuine constraints on the result and their rationale. Identify informat
 
 For access dependencies, record the required access, its purpose, and the responsible contact, not passwords, keys, tokens, private keys, or redeemable secret links. Secret values belong in direct sharing to the authorized intended recipient through a dedicated application such as [NHT SecOps](https://secops.nht.io/), not in this document, its comments or attachments, ordinary chat, or the repository.
 
-## Assumptions and open decisions
+## Draft-only product questions and readiness
 
-Record what remains unverified, who can answer if known, and whether an answer changes deliverables, scope, or acceptance. Keep material unresolved commitments visible.
+While drafting, record unanswered questions about what, why, scope, business rules, deliverables, or acceptance; identify the requester or decision owner when known. State **Not ready for implementation** and list these product blockers explicitly. Do not leave them for the development team to decide.
+
+Before handoff, resolve the product questions with the requester, incorporate the answers into the requirements and acceptance criteria, and close or remove this draft-only question section from the final baseline while preserving decision history. Do not delete unresolved evidence, relabel product choices as technical, or invent answers to pass the gate.
+
+Record the readiness assessment in the document's state/revision information. Only technical how decisions owned by the development team may remain open; link separate technical work if useful rather than filling the Product Specification with implementation decisions. A technical constraint that changes the promised result requires a requester decision before handoff.
 
 ## Acceptance criteria
 
-Finish the specification with this section. For each AC1, AC2, and subsequent check, include the deliverable verified, conditions, action or inspection, expected result, and evidence. Cover every deliverable and its important boundary cases. Use Given/When/Then or plain statements as appropriate, and leave unagreed thresholds as open decisions rather than invented numbers.
+Finish the specification with this section. For each AC1, AC2, and subsequent check, include the deliverable verified, conditions, action or inspection, expected result, and evidence. Cover every deliverable and its important boundary cases. Use Given/When/Then or plain statements as appropriate, and leave unagreed thresholds visible as product blockers in a draft rather than inventing numbers. Resolve all thresholds required to judge acceptance before treating the specification as handoff-ready.

@@ -32,7 +32,17 @@ The document is written for the requester, not only the delivery team. Explain s
 
 Separate distinct deliverables and give them stable, simple identifiers. Record important exclusions positively; silence alone is an unreliable scope boundary. Preserve one current specification and link background evidence instead of distributing the promise across chats and disconnected documents.
 
-Label assumptions and proposed additions. When a material decision is unknown, record the question and the person who can answer if known. An incomplete draft is acceptable; an invented answer presented as agreed is not. Clarification remains welcome after drafting.
+Label assumptions and proposed additions. During drafting, record unanswered product questions and identify who can answer if known. An incomplete draft is acceptable, but it is not a handoff-ready specification. Resolve product assumptions and decisions with the requester before treating them as an implementation baseline. Never invent an answer or hide the question to make the document appear complete.
+
+## Handoff-readiness gate
+
+Assess readiness explicitly before marking a Product Specification handoff-ready or presenting it as an agreed implementation baseline. The requester must have resolved what is needed, why it matters, scope and exclusions, business rules, deliverables, and acceptance criteria. The development team must be able to implement the promised result without inventing product decisions.
+
+If any of those decisions remain unresolved, state **Not ready for implementation**, list the specific product blockers, and ask the requester the questions needed to resolve them. Saving or publishing a draft is still possible when requested, provided it remains visibly a draft with blockers. Do not represent a product-incomplete document as agreed merely because someone asked to move forward.
+
+Only technical how decisions owned by the development team may remain open at handoff. Track them in separate technical work or a short reference to that work, not as a product-question backlog inside the final specification. For example, choosing storage or an internal processing strategy is technical only if the agreed product behavior and acceptance remain unchanged. Unclear eligibility, report contents, permissions experienced by users, or acceptable delays are product decisions, even if engineers could choose an answer.
+
+When a technical constraint affects scope, behavior, business rules, or acceptance, return the product trade-off to the requester. Do not guess or disguise it as an implementation detail. Once product questions are resolved, incorporate the answers into the relevant sections and acceptance criteria, close or remove the draft-only question section from the final baseline, and preserve the decision history. Readiness is a content assessment, not a substitute for actual requester agreement.
 
 ## Acceptance criteria
 
@@ -49,7 +59,7 @@ Illustrative operational example, not an NHT commitment:
 
 - D1: Each new starter receives a checklist of onboarding activities with responsibility and due date for each activity.
 - AC1: For a sample starter, compare the supplied checklist with the agreed onboarding activity list. Every applicable activity appears with an identified responsible person and due date.
-- Open decision: Who maintains the activity list, and which activities vary by role?
+- Draft-only product blocker: Who maintains the activity list, and which activities vary by role? This example is not handoff-ready until that behavior and responsibility are resolved and reflected in the requirements and checks.
 
 Delivering that checklist can satisfy acceptance without guaranteeing a reduction in onboarding time. Track intended business benefits separately from the deliverable's acceptance tests.
 
@@ -67,7 +77,7 @@ Material changes to scope or acceptance must be visible so the affected parties 
 
 ## Review questions
 
-Can the requester explain what they will receive? Does every deliverable have an acceptance check? Are scope limits and exceptions explicit? Can a different delivery team choose its own implementation without changing the promise? Are suggestions and unknowns distinguished from commitments? Does the document end with acceptance criteria?
+Can the requester explain what they will receive? Does every deliverable have an acceptance check? Are scope limits and exceptions explicit? Can a different delivery team choose its own implementation without changing the promise? Are suggestions and unknowns distinguished from commitments? Are all product decisions resolved before handoff, with only separate development-owned technical choices remaining? If not, are the blockers and not-ready assessment explicit? Does the document end with acceptance criteria?
 
 ## Background references
 

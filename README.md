@@ -4,6 +4,10 @@ An agent skill for helping requesters write and maintain Product Specifications 
 
 A Product Specification describes what the requester expects to receive, why it is needed, its deliverables and scope, and how acceptance is verified. It is separate from technical design and implementation planning. The skill combines that NHT standard with practical navigation and authoring through Outline's native MCP server.
 
+## Readiness for implementation
+
+Drafts can expose unanswered product questions. Before a spec is marked handoff-ready or an agreed implementation baseline, the requester must resolve its what, why, scope, business rules, deliverables, and acceptance criteria. The skill reports unresolved product decisions as blockers rather than asking the development team to guess. Only technical implementation decisions owned by that team may remain open, tracked separately. If a technical constraint changes the promised product result, that choice returns to the requester. Publishing a document is not approval or proof of readiness.
+
 ## Organization
 
 Top-level collections in NHT Specs represent projects. Welcome holds shared requester guidance and the reusable template. Each request belongs in its owning project collection; cross-project work links to one canonical specification rather than duplicating it. Project collections provide a practical access boundary, but actual document sharing and permissions still need to be checked. The skill does not create collections or change access as a side effect of writing a specification.
@@ -22,7 +26,7 @@ Ask your assistant, for example:
 
 - “Use nht-product-specs to turn this request into a Product Specification. Ask about material gaps before treating them as requirements.”
 - “Review this NHT spec for unclear deliverables and missing acceptance criteria; do not edit it yet.”
-- “Save this agreed draft in the collection I specify.”
+- “Assess this specification for handoff readiness and save the resulting draft in the project collection I specify.”
 
 Codex also supports explicit invocation as `$nht-product-specs`.
 

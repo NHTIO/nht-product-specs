@@ -58,7 +58,7 @@ Check any permission metadata returned for the destination. If it explicitly say
 
 For `create_document`, supply a verified `collectionId` or `parentDocumentId`, a separate `title`, and the body as Markdown. Do not start the body with an H1. Use `templateId` only when it came from actual template discovery.
 
-The current tool defaults `publish` to true. For an explicitly requested draft, set `publish: false`; do not confuse an Outline draft's storage state with human agreement. For a request to save/publish in a named collection, use the authorized state and destination. Do not change access or broaden the audience as a side effect. If the intended visibility is ambiguous, clarify before saving.
+The current tool defaults `publish` to true. For an explicitly requested draft, set `publish: false`; do not confuse an Outline draft's storage state with human agreement or handoff readiness. A draft may expose unresolved product questions, but do not mark it handoff-ready or an agreed implementation baseline until its what, why, scope, business rules, deliverables, and acceptance criteria are resolved. For a request to save/publish in a named collection, use the authorized state and destination. Do not change access or broaden the audience as a side effect. If the intended visibility is ambiguous, clarify before saving.
 
 ## Authorized editing
 
@@ -66,4 +66,4 @@ Prefer `update_document` with `editMode: "patch"`, an exact `findText` copied fr
 
 Use full replacement only when a whole-document rewrite is actually requested and its formatting implications are acceptable. Do not assume the tool provides optimistic locking. Immediately before a consequential patch, fetch again and compare the target excerpt and relevant agreement metadata with the version used to prepare the edit. Reconcile changes before writing. This is a best-effort check, not an atomic lock; use any revision precondition the actual server offers. If content changed or a patch fails, fetch again and reconcile; never repeat a stale replacement blindly.
 
-After creation or editing, fetch the document to verify the content, destination, links, and requested publication state. Return the actual URL and unresolved decisions. On an uncertain write outcome, inspect existing state before retrying to avoid duplicate documents or repeated edits.
+After creation or editing, fetch the document to verify the content, destination, links, and requested publication state. Return the actual URL and an explicit readiness assessment. List unresolved product decisions as implementation blockers, not as work for the development team to guess. Only separate development-owned technical how decisions may remain open at handoff. On an uncertain write outcome, inspect existing state before retrying to avoid duplicate documents or repeated edits.
