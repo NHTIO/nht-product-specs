@@ -4,6 +4,10 @@ An agent skill for helping requesters write and maintain Product Specifications 
 
 A Product Specification describes what the requester expects to receive, why it is needed, its deliverables and scope, and how acceptance is verified. It is separate from technical design and implementation planning. The skill combines that NHT standard with practical navigation and authoring through Outline's native MCP server.
 
+## Organization
+
+Top-level collections in NHT Specs represent projects. Welcome holds shared requester guidance and the reusable template. Each request belongs in its owning project collection; cross-project work links to one canonical specification rather than duplicating it. Project collections provide a practical access boundary, but actual document sharing and permissions still need to be checked. The skill does not create collections or change access as a side effect of writing a specification.
+
 ## Install
 
 This repository is one standalone skill. Install or copy the repository as a folder named `nht-product-specs` in your client's skill directory. Keep `SKILL.md`, `references/`, and `agents/` together. Consult your client's skill-installation documentation for its supported path and reload behavior.

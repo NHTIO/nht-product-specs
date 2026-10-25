@@ -7,7 +7,7 @@ description: Help requesters create, review, and refine Product Specifications t
 
 Help the requester express what they expect to receive. A Product Specification is a contract of shared understanding: the reason for the request, the promised deliverables and boundaries, and how acceptance will be established. It is not evidence of legal execution or approval merely because it exists in NHT Specs.
 
-NHT Specs at https://specs.nht.io is the working home for requester-authored specifications and guidance. This applies across the organization, including services, reports, operations, and product capabilities, not only software development.
+NHT Specs at https://specs.nht.io is the working home for requester-authored specifications and guidance. This applies across the organization, including services, reports, operations, and product capabilities, not only software development. Top-level collections represent projects; Welcome is the shared guidance collection. Save each request in its owning project collection, with access checked for that project.
 
 ## Choose the work
 
@@ -23,7 +23,7 @@ NHT Specs at https://specs.nht.io is the working home for requester-authored spe
 3. Distinguish stated requirements, suggestions, assumptions, and unanswered questions. Ask focused questions when answers materially change scope or acceptance; otherwise retain visible open decisions in the draft. Do not invent deadlines, thresholds, owners, roles, or commitments.
 4. Use the live template when available, or [the fallback structure](references/specification-structure.md). Scale detail to the request. End the specification with acceptance criteria linked to every deliverable.
 5. Check that the requester can recognize what they will receive and verify acceptance. Separate delivery acceptance from hoped-for business benefits. Do not imply that writing, saving, or publishing a document means stakeholders agreed to it.
-6. Save only when requested, to a verified destination under the user's existing permissions. Follow [the MCP workflow](references/specs-mcp.md), then read back the saved content and return its actual link with unresolved decisions.
+6. Save only when requested, to the verified owning project collection under the user's existing permissions. Reuse its current structure; do not create a general Specifications collection or move documents to represent status. Follow [the MCP workflow](references/specs-mcp.md), then read back the saved content and return its actual link with unresolved decisions.
 
 When changing an agreed specification, make the change to the promise explicit. Do not silently reinterpret prior agreement or claim renewed agreement on behalf of the requester or delivery team.
 

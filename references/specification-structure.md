@@ -4,9 +4,11 @@ Prefer the current NHT Specs template. This structure is a fallback, not a secon
 
 Use the requested capability or outcome as the document title. In Outline, pass it in the separate title field, not an H1 at the beginning of the body.
 
+**Owning project:** the project whose collection holds this canonical specification. Link related projects when relevant; do not duplicate the specification or treat links as access grants.
+
 **Requester:** who is asking and can clarify the need.
 
-**Current state and revision:** distinguish an initial draft, proposed changes, and an actually agreed version. Record agreement participants/date only when known.
+**Current state and revision:** keep status in the document rather than moving it among collections. Distinguish an initial draft, proposed changes, and an actually agreed version. Record agreement participants/date only when known.
 
 ## Problem and purpose
 

@@ -24,10 +24,19 @@ Validate connection with a harmless collection listing and fetch the Welcome gui
 
 ## Workspace organization
 
-- **Welcome** contains the requester guidance and reusable template. Begin with the [Welcome guide](https://specs.nht.io/doc/welcome-to-nht-specs-PCn98JmQt6).
-- A request belongs in its own specification document, not in the shared guidance or template.
-- Discover the current collections and hierarchy. Do not assume a global department naming scheme, a required Monday register, a GitLab backend, or a mandatory approvals service.
-- Use the destination the user identifies. If no requester-spec destination is established or several are plausible, ask where to save. Do not silently create a collection, choose public sharing, or place requests under Welcome merely because it is visible.
+- **Project = top-level collection.** Put each request's canonical specification in its owning project's collection, not a general Specifications collection.
+- **Welcome** remains shared requester guidance and the reusable template. Begin with the [Welcome guide](https://specs.nht.io/doc/welcome-to-nht-specs-PCn98JmQt6); do not put project requests into the guide or template.
+- Discover accessible project collections and their hierarchy, then resolve the owning project from the user's request and current context. If the project, destination, or cross-project ownership is ambiguous, ask. An absent collection may be inaccessible rather than nonexistent; do not silently create a replacement.
+- Follow each project's existing organization. A project overview, specification documents, and optional supporting references are useful when needed, not a mandatory empty scaffold.
+- For cross-project work, keep one canonical specification in the owning project and use authorized links from related contexts. Verify recipients can access what they need; links do not grant access and do not authorize changing it.
+- Keep draft/review/agreement status as document metadata or clearly labeled content. Do not move documents among collections to express status; doing so may change access.
+- Do not assume a required Monday register, GitLab backend, or mandatory approvals service.
+
+## Project access
+
+Treat the project collection as the normal access boundary and verify the acting account's read/write permissions for the requested operation. Use the least project access necessary. Check the intended audience and available sharing metadata before adding sensitive material; document-specific, subtree, or public sharing can broaden effective access beyond the collection's membership.
+
+Do not infer that a collection is private merely from its name, or that visible content can be edited. A request to write a specification does not authorize creating collections, adding members, changing roles, enabling public links, or changing document sharing. If access is insufficient or the audience is uncertain, report the exact blocker and ask for an appropriate destination or authorized administrator action. Never change permissions automatically to finish the write.
 
 ## Tool discovery and reading
 

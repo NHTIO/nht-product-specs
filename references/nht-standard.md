@@ -9,6 +9,14 @@ Read the current versions when the connected account has access:
 
 These are reference documents, not the destination for a new request. Do not overwrite them to create a request-specific spec. If unavailable, use this bundled baseline and say live guidance could not be checked; do not claim the cached baseline is necessarily current.
 
+## Projects and ownership
+
+Each project has a top-level collection. Welcome remains shared guidance, not a project-spec inbox. Each request has an owning project and one canonical specification in that project's collection. For cross-project work, identify the owning project and link to the canonical document from other relevant contexts rather than duplicating the commitment; a link does not itself grant access.
+
+Within a project, an overview and specifications can be organized with supporting reference material when useful. Follow the project's existing structure rather than generating mandatory empty pages. Keep status, revision, and agreement information on the document instead of moving specifications among status collections.
+
+Project-level access lets the organization limit who can read or contribute to a project. Verify the intended audience and the acting account's access; use only the project access needed for the task. Collection placement alone does not prove that document, subtree, or public sharing has not broadened access. Creating a spec does not authorize changing membership or sharing.
+
 ## What belongs in a Product Specification
 
 - **Why:** the problem or opportunity, affected people, evidence, and intended improvement.
